@@ -1,4 +1,5 @@
 const path = require('path');
+const cors = require('cors');
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
@@ -17,6 +18,7 @@ const port = 5000;
 const route = require('./routes/index.js');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors())
 
 app.use(
     express.urlencoded({
