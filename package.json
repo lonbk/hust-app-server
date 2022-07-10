@@ -1,0 +1,52 @@
+{
+    "dependencies": {
+        "bcrypt-nodejs": "^0.0.3",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-generator": "^4.16.1",
+        "express-handlebars": "^6.0.6",
+        "express-validator": "^6.14.1",
+        "jsonwebtoken": "^8.5.1",
+        "method-override": "^3.0.0",
+        "mongoose": "^6.3.8",
+        "mongoose-delete": "^0.5.4",
+        "mongoose-slug-generator": "^1.0.4",
+        "node-sass": "^7.0.1",
+        "passport": "^0.6.0",
+        "passport-local": "^1.0.0"
+    },
+    "name": "hustapp",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "scripts": {
+        "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write package.json package-lock.json nodemon.json src/**/*.js src/**/*.scss",
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass src/resources/scss/app.scss src/public/css/app.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lonbk/nodejs_blog.git"
+    },
+    "keywords": [
+        "doan2",
+        "nodejs"
+    ],
+    "author": "longbk",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lonbk/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/lonbk/nodejs_blog#readme",
+    "description": "",
+    "devDependencies": {
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.16",
+        "prettier": "^2.6.2"
+    }
+}
